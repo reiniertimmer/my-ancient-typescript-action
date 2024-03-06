@@ -1,0 +1,13 @@
+name: Test Node12 action
+
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: reiniertimmer/my-ancient-typescript-action@main
+
